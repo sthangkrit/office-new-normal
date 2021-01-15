@@ -8,8 +8,8 @@ const mssql = require("mssql");
 const config = {
     user: 'admin',
     password: '12345678',
-    server: 'se-linebot.cunjxvt4q8lb.ap-southeast-1.rds.amazonaws.com',
-    database: 'se_linebot',
+    server: 'xxxx',
+    database: 'xxxx',
     options: {
         "encrypt": true,
         "enableArithAbort": true
@@ -38,10 +38,6 @@ app.post('/webhook', (req, res) => {
 app.listen(port)
 
 
-// Ueac9df3131b070ad67facf03d22d4156  sthang
-// Ua989cf7b82e0e7fd5e6259ff7633f6c9  big
-// U51181a1fa67950bab745507e10f4eed4  ohm
-// U247f684fe2297a2210fccdafd5a659a0  tar
 
 function checkin(uid) {
 
@@ -52,7 +48,7 @@ function checkin(uid) {
             return "Checkin สำเร็จ"
         }
     }
-    return "มึงเป็นใครวะมาใช้ระบบกู"
+    return "ไม่รู้จัก"
 }
 
 
